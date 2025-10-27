@@ -2,14 +2,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
-    <!--
-     PERMISOS AÑADIDOS
-     Estos son necesarios para que Google Maps funcione.
-    -->
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
-    <!-- FIN DE PERMISOS AÑADIDOS -->
 
     <application
         android:allowBackup="true"
@@ -21,10 +16,6 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Ubi">
 
-        <!--
-         Tu API Key de Google Maps.
-         Está correctamente añadida.
-        -->
         <meta-data
             android:name="com.google.android.geo.API_KEY"
             android:value="AIzaSyBoKQAwnwDll1tfNVgdL2lzcHUeJmiM4q0" />
@@ -35,7 +26,7 @@
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter> <!-- ESTA ES LA LÍNEA CORREGIDA -->
+            </intent-filter>
         </activity>
     </application>
 
